@@ -54,7 +54,7 @@ const Details = () => {
               {selectedCar.photoUrls.map((photo, index) => {
                 return (
                   <div key={index} className="carousel-item">
-                    <Image src={photo} alt={"car"} />
+                    <img src={photo} alt={"car"} />
                   </div>
                 );
               })}
