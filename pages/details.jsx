@@ -221,7 +221,7 @@ const Details = () => {
         </div>
 
         <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-          <Image
+          <img
             className="object-cover w-full h-full max-w-2xl rounded-md"
             src={selectedCar.primaryPhotoUrl}
             alt="glasses photo"
