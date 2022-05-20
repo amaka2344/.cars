@@ -25,7 +25,7 @@ import isMobilePhone from "validator/lib/isMobilePhone";
 
 const client = filestack.init(process.env.NEXT_PUBLIC_FILESTACK_API);
 
-const personalInfo = () => {
+const PersonalInfo = () => {
   // init use state for multiple input
   const [input, setInput] = useState({
     fName: "",
@@ -357,4 +357,4 @@ const personalInfo = () => {
   );
 };
 
-export default personalInfo;
+export default PersonalInfo;

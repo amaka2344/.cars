@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function MainNavPage() {
     return(
      <div>
@@ -6,12 +8,12 @@ function MainNavPage() {
   <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
     <div className="flex items-center justify-between">
       <div>
-        <a
+        <Link
           className="text-2xl font-bold text-blue-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-blue-700 dark:hover:text-blue-300"
           href="/"
         >
           .CARS
-        </a>
+        </Link>
       </div>
       {/* Mobile menu button */}
       <div className="flex md:hidden">

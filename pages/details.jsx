@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import Head from "next/head";
 
+import Image from "next/image";
 
 import MainNavPage from "../components/MainNav";
 
@@ -53,7 +54,7 @@ const Details = () => {
               {selectedCar.photoUrls.map((photo, index) => {
                 return (
                   <div key={index} className="carousel-item">
-                    <img src={photo} alt={"car"} />
+                    <Image src={photo} alt={"car"} />
                   </div>
                 );
               })}
@@ -220,7 +221,7 @@ const Details = () => {
         </div>
 
         <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-          <img
+          <Image
             className="object-cover w-full h-full max-w-2xl rounded-md"
             src={selectedCar.primaryPhotoUrl}
             alt="glasses photo"

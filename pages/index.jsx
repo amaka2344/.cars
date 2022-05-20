@@ -1,6 +1,5 @@
 //@ts-check
 import Head from "next/head";
-import Script from "next/script";
 import Image from "next/image";
 import MainNavPage from "../components/MainNav";
 import CardPage from "../components/UI/Card";
@@ -54,7 +53,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Cars</title>
-        <Script src="https://cdn.tailwindcss.com" />
       </Head>
       <Toaster />
       <MainNavPage />
